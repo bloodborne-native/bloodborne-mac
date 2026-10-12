@@ -91,6 +91,12 @@ strip -x "$macos/bb-probe" "$macos/bb-gpu-capabilities" "$frameworks/"*.dylib 2>
 
 cp "$runtime/run.sh" LICENSE README.md "$game/"
 cp -R "$runtime/scripts" "$runtime/patches" "$game/"
+cp -R "$runtime/gpu/fsr4_metal" "$game/"
+if [[ -d /Users/vitao/Documents/GitHub/fsr4-native-macos ]]; then
+    mkdir -p "$game/fsr4_metal/tools"
+    cp -R /Users/vitao/Documents/GitHub/fsr4-native-macos/tools "$game/fsr4_metal/"
+    cp -R /Users/vitao/Documents/GitHub/fsr4-native-macos/third_party "$game/fsr4_metal/"
+fi
 cp -R "$deps/app-runtime/python" "$app/Contents/Resources/python"
 find "$app" -name __pycache__ -type d -prune -exec rm -rf {} +
 # Ad-hoc signatures, inside out (libraries, helpers, Python's binaries, then the bundle).

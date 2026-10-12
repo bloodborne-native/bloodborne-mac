@@ -87,7 +87,7 @@
     "openFolder": "로그 폴더", "empty": "아직 없음", "emptyHint": "게임을 시작하면 여기에 출력이 표시됩니다.", "follow": "따라가기"
   },
   "options": {
-    "upscaler": { "fsr3": "AMD FSR 3.1", "fsr3Hint": "출력보다 낮게 렌더링한 뒤 재구성", "off": "끔", "offHint": "네이티브 해상도" },
+    "upscaler": { "fsr411": "AMD FSR 4.1.1 (Metal)", "fsr411Hint": "Apple Metal에서 실행되는 FSR 4.1.1 뉴럴 업스케일러", "fsr4": "AMD FSR 4.0", "fsr4Hint": "FSR 4.0 뉴럴 업스케일러", "fsr3": "AMD FSR 3.1", "fsr3Hint": "출력보다 낮게 렌더링한 뒤 재구성", "off": "끔", "offHint": "네이티브 해상도" },
     "preset": { "0": "Native AA", "1": "품질", "2": "균형", "3": "성능", "4": "울트라 성능" },
     "fps": { "uncap": "제한 없음", "uncapHint": "프레임 시간 패치: 모든 프레임 레이트", "60": "60", "90": "90", "30": "30", "30Hint": "PS4와 동일" },
     "lod": { "-2": "최고", "0": "게임 기본", "1": "낮음", "2": "최저" },

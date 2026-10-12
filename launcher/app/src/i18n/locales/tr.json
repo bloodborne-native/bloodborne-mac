@@ -87,7 +87,7 @@
     "openFolder": "Günlük klasörü", "empty": "Henüz bir şey yok", "emptyHint": "Çıktısını burada görmek için oyunu başlatın.", "follow": "Takip et"
   },
   "options": {
-    "upscaler": { "fsr3": "AMD FSR 3.1", "fsr3Hint": "Çıkışın altında işler ve görüntüyü yeniden oluşturur", "off": "Kapalı", "offHint": "Yerel çözünürlük" },
+    "upscaler": { "fsr411": "AMD FSR 4.1.1 (Metal)", "fsr411Hint": "Apple Metal üzerinde çalışan FSR 4.1.1 yapay zeka yükseltici", "fsr4": "AMD FSR 4.0", "fsr4Hint": "FSR 4.0 yapay zeka yükseltici", "fsr3": "AMD FSR 3.1", "fsr3Hint": "Çıkışın altında işler ve görüntüyü yeniden oluşturur", "off": "Kapalı", "offHint": "Yerel çözünürlük" },
     "preset": { "0": "Native AA", "1": "Kalite", "2": "Dengeli", "3": "Performans", "4": "Ultra performans" },
     "fps": { "uncap": "Sınırsız", "uncapHint": "Kare süresi yaması: her kare hızı", "60": "60", "90": "90", "30": "30", "30Hint": "PS4'teki gibi" },
     "lod": { "-2": "En yüksek", "0": "Oyundaki gibi", "1": "Daha düşük", "2": "En düşük" },

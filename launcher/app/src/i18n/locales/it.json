@@ -87,7 +87,7 @@
     "openFolder": "Cartella dei registri", "empty": "Ancora niente", "emptyHint": "Avvia il gioco per vederne qui l'output.", "follow": "Segui"
   },
   "options": {
-    "upscaler": { "fsr3": "AMD FSR 3.1", "fsr3Hint": "Renderizza sotto l'uscita e ricostruisce l'immagine", "off": "Disattivato", "offHint": "Risoluzione nativa" },
+    "upscaler": { "fsr411": "AMD FSR 4.1.1 (Metal)", "fsr411Hint": "Upscaling neurale FSR 4.1.1 su Apple Metal", "fsr4": "AMD FSR 4.0", "fsr4Hint": "Upscaling neurale FSR 4.0", "fsr3": "AMD FSR 3.1", "fsr3Hint": "Renderizza sotto l'uscita e ricostruisce l'immagine", "off": "Disattivato", "offHint": "Risoluzione nativa" },
     "preset": { "0": "Native AA", "1": "Qualità", "2": "Bilanciato", "3": "Prestazioni", "4": "Ultra prestazioni" },
     "fps": { "uncap": "Illimitata", "uncapHint": "Patch del tempo di fotogramma: qualsiasi frequenza", "60": "60", "90": "90", "30": "30", "30Hint": "Come su PS4" },
     "lod": { "-2": "Massimo", "0": "Come nel gioco", "1": "Inferiore", "2": "Minimo" },

@@ -35,6 +35,7 @@ Changes taken from other ports of bbport, with thanks:
 - [FFmpeg](https://ffmpeg.org/) (LGPL)
 - [Mesa](https://www.mesa3d.org/) KosmicKrisp (MIT, optional)
 - [FSR-Vulkan](https://github.com/FireBurn/FSR-Vulkan) by FireBurn and the AMD FidelityFX SDK (MIT)
+- [fsr4-native-macos](https://github.com/UzenUPoZiTiV4ik/fsr4-native-macos) by UzenUPoZiTiV4ik (MIT), native Apple Metal FSR 4 / 4.1.1 upscaling pipeline
 - [LibAtrac9](https://github.com/Thealexbarney/LibAtrac9) (MIT)
 - [Dear ImGui](https://github.com/ocornut/imgui) (MIT)
 - [cpp-httplib](https://github.com/yhirose/cpp-httplib) by Yuji Hirose (MIT), in the online module

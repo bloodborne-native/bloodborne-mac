@@ -87,7 +87,7 @@
     "openFolder": "Protokollordner", "empty": "Noch nichts", "emptyHint": "Starte das Spiel, um hier seine Ausgabe zu sehen.", "follow": "Mitlaufen"
   },
   "options": {
-    "upscaler": { "fsr3": "AMD FSR 3.1", "fsr3Hint": "Rendert unter der Ausgabe und rekonstruiert das Bild", "off": "Aus", "offHint": "Native Auflösung" },
+    "upscaler": { "fsr411": "AMD FSR 4.1.1 (Metal)", "fsr411Hint": "FSR 4.1.1 neuronales Upscaling auf Apple Metal", "fsr4": "AMD FSR 4.0", "fsr4Hint": "FSR 4.0 neuronales Upscaling", "fsr3": "AMD FSR 3.1", "fsr3Hint": "Rendert unter der Ausgabe und rekonstruiert das Bild", "off": "Aus", "offHint": "Native Auflösung" },
     "preset": { "0": "Native AA", "1": "Qualität", "2": "Ausgewogen", "3": "Leistung", "4": "Ultra-Leistung" },
     "fps": { "uncap": "Unbegrenzt", "uncapHint": "Frametime-Patch: jede Bildrate", "60": "60", "90": "90", "30": "30", "30Hint": "Wie auf der PS4" },
     "lod": { "-2": "Höchste", "0": "Wie im Spiel", "1": "Niedriger", "2": "Niedrigste" },

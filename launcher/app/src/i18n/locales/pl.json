@@ -87,7 +87,7 @@
     "openFolder": "Folder dzienników", "empty": "Jeszcze nic", "emptyHint": "Uruchom grę, aby zobaczyć tutaj jej wyjście.", "follow": "Śledź"
   },
   "options": {
-    "upscaler": { "fsr3": "AMD FSR 3.1", "fsr3Hint": "Renderuje poniżej wyjścia i odtwarza obraz", "off": "Wył.", "offHint": "Natywna rozdzielczość" },
+    "upscaler": { "fsr411": "AMD FSR 4.1.1 (Metal)", "fsr411Hint": "Neuronowe skalowanie FSR 4.1.1 na Apple Metal", "fsr4": "AMD FSR 4.0", "fsr4Hint": "Neuronowe skalowanie FSR 4.0", "fsr3": "AMD FSR 3.1", "fsr3Hint": "Renderuje poniżej wyjścia i odtwarza obraz", "off": "Wył.", "offHint": "Natywna rozdzielczość" },
     "preset": { "0": "Native AA", "1": "Jakość", "2": "Zrównoważone", "3": "Wydajność", "4": "Ultrawydajność" },
     "fps": { "uncap": "Bez limitu", "uncapHint": "Łatka czasu klatki: dowolna liczba klatek", "60": "60", "90": "90", "30": "30", "30Hint": "Jak na PS4" },
     "lod": { "-2": "Najwyższa", "0": "Jak w grze", "1": "Niższa", "2": "Najniższa" },

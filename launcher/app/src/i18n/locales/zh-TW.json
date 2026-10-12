@@ -87,7 +87,7 @@
     "openFolder": "記錄資料夾", "empty": "尚無內容", "emptyHint": "啟動遊戲後會在這裡顯示它的輸出。", "follow": "跟隨"
   },
   "options": {
-    "upscaler": { "fsr3": "AMD FSR 3.1", "fsr3Hint": "以低於輸出的解析度算繪並重建影像", "off": "關", "offHint": "原生解析度" },
+    "upscaler": { "fsr411": "AMD FSR 4.1.1 (Metal)", "fsr411Hint": "在 Apple Metal 上執行的 FSR 4.1.1 神經超解析度", "fsr4": "AMD FSR 4.0", "fsr4Hint": "FSR 4.0 神經超解析度", "fsr3": "AMD FSR 3.1", "fsr3Hint": "以低於輸出的解析度算繪並重建影像", "off": "關", "offHint": "原生解析度" },
     "preset": { "0": "Native AA", "1": "品質", "2": "平衡", "3": "效能", "4": "極致效能" },
     "fps": { "uncap": "不限", "uncapHint": "影格時間修補：任何影格率", "60": "60", "90": "90", "30": "30", "30Hint": "與 PS4 相同" },
     "lod": { "-2": "最高", "0": "遊戲預設", "1": "較低", "2": "最低" },

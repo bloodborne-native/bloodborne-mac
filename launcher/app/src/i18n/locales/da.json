@@ -87,7 +87,7 @@
     "openFolder": "Logmappe", "empty": "Intet endnu", "emptyHint": "Start spillet for at se dets output her.", "follow": "Følg"
   },
   "options": {
-    "upscaler": { "fsr3": "AMD FSR 3.1", "fsr3Hint": "Renderer under output og genskaber billedet", "off": "Fra", "offHint": "Indbygget opløsning" },
+    "upscaler": { "fsr411": "AMD FSR 4.1.1 (Metal)", "fsr411Hint": "FSR 4.1.1 neural opskalering på Apple Metal", "fsr4": "AMD FSR 4.0", "fsr4Hint": "FSR 4.0 neural opskalering", "fsr3": "AMD FSR 3.1", "fsr3Hint": "Renderer under output og genskaber billedet", "off": "Fra", "offHint": "Indbygget opløsning" },
     "preset": { "0": "Native AA", "1": "Kvalitet", "2": "Balanceret", "3": "Ydelse", "4": "Ultraydelse" },
     "fps": { "uncap": "Ubegrænset", "uncapHint": "Billedtidspatch: enhver billedhastighed", "60": "60", "90": "90", "30": "30", "30Hint": "Som på PS4" },
     "lod": { "-2": "Højest", "0": "Som i spillet", "1": "Lavere", "2": "Lavest" },

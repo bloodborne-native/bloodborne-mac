@@ -87,7 +87,7 @@
     "openFolder": "Lokikansio", "empty": "Ei vielä mitään", "emptyHint": "Käynnistä peli nähdäksesi sen tulosteen tässä.", "follow": "Seuraa"
   },
   "options": {
-    "upscaler": { "fsr3": "AMD FSR 3.1", "fsr3Hint": "Renderöi lähtöä pienemmällä ja rakentaa kuvan uudelleen", "off": "Pois", "offHint": "Natiivitarkkuus" },
+    "upscaler": { "fsr411": "AMD FSR 4.1.1 (Metal)", "fsr411Hint": "FSR 4.1.1 -neuroverkkoskaalaus Apple Metalilla", "fsr4": "AMD FSR 4.0", "fsr4Hint": "FSR 4.0 -neuroverkkoskaalaus", "fsr3": "AMD FSR 3.1", "fsr3Hint": "Renderöi lähtöä pienemmällä ja rakentaa kuvan uudelleen", "off": "Pois", "offHint": "Natiivitarkkuus" },
     "preset": { "0": "Native AA", "1": "Laatu", "2": "Tasapainoinen", "3": "Suorituskyky", "4": "Ultrasuorituskyky" },
     "fps": { "uncap": "Rajoittamaton", "uncapHint": "Kuva-aikapaikka: mikä tahansa kuvataajuus", "60": "60", "90": "90", "30": "30", "30Hint": "Kuten PS4:llä" },
     "lod": { "-2": "Korkein", "0": "Kuten pelissä", "1": "Matalampi", "2": "Matalin" },

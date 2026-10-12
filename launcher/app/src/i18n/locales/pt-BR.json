@@ -222,6 +222,10 @@
   },
   "options": {
     "upscaler": {
+      "fsr411": "AMD FSR 4.1.1 (Metal)",
+      "fsr411Hint": "Upscaler neural FSR 4.1.1 executado em Apple Metal",
+      "fsr4": "AMD FSR 4.0",
+      "fsr4Hint": "Upscaler neural FSR 4.0",
       "fsr3": "AMD FSR 3.1",
       "fsr3Hint": "Renderiza abaixo da saída e reconstrói a imagem",
       "off": "Desligado",

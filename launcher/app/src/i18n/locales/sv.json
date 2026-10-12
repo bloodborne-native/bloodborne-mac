@@ -87,7 +87,7 @@
     "openFolder": "Loggmapp", "empty": "Inget ännu", "emptyHint": "Starta spelet för att se dess utdata här.", "follow": "Följ"
   },
   "options": {
-    "upscaler": { "fsr3": "AMD FSR 3.1", "fsr3Hint": "Renderar under utdata och återskapar bilden", "off": "Av", "offHint": "Inbyggd upplösning" },
+    "upscaler": { "fsr411": "AMD FSR 4.1.1 (Metal)", "fsr411Hint": "FSR 4.1.1 neural uppskalning på Apple Metal", "fsr4": "AMD FSR 4.0", "fsr4Hint": "FSR 4.0 neural uppskalning", "fsr3": "AMD FSR 3.1", "fsr3Hint": "Renderar under utdata och återskapar bilden", "off": "Av", "offHint": "Inbyggd upplösning" },
     "preset": { "0": "Native AA", "1": "Kvalitet", "2": "Balanserad", "3": "Prestanda", "4": "Ultraprestanda" },
     "fps": { "uncap": "Obegränsad", "uncapHint": "Bildtidspatch: valfri bildfrekvens", "60": "60", "90": "90", "30": "30", "30Hint": "Som på PS4" },
     "lod": { "-2": "Högst", "0": "Som i spelet", "1": "Lägre", "2": "Lägst" },
