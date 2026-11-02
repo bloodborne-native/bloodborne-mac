@@ -62,7 +62,7 @@ Changes taken from other ports of bbport, with thanks (details and commits in th
 - [LLVM](https://llvm.org) (Apache-2.0 with LLVM exception): not shipped in the app; the
   launcher downloads clang and `ld64.lld` from bloodborne-recomp's `toolchain-llvm-23.1.4` release
   (trimmed from LLVM's official release, with its licence) to build the recompiled library
-- [Zydis](https://github.com/zyantific/zydis) (MIT), the translator's x86 decoder
+- [Zydis](https://github.com/zyantific/zydis) (MIT), the x86 decoder of [bbcpu](https://github.com/bloodborne-native/bbcpu)
 - [SDL3](https://www.libsdl.org/) (zlib)
 - [FFmpeg](https://ffmpeg.org/) (LGPL)
 - [Mesa](https://www.mesa3d.org/) KosmicKrisp (MIT, optional)

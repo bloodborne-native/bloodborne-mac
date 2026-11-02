@@ -151,7 +151,7 @@ how code is organized: [Architecture](ARCHITECTURE.md#where-code-lives)):
 
 Where each landed; the release notes say what changed for players.
 
-**CPU and recompiler** (bloodborne-recomp):
+**CPU and recompiler** (bbcpu and bloodborne-recomp):
 
 - The first stages of the recompiler: every function recompiled and running in the game, with less CPU time than the translator
   (the speed work, 2026-10-25).
