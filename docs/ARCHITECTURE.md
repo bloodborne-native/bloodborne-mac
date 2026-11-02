@@ -11,7 +11,8 @@ How the app is put together. Each part has its own docs; this page says which pa
 | **bloodborne-mac** (this one) | | Packages the macOS app and its DMG, publishes releases, holds the player guides and the roadmap |
 | [bloodborne-launcher](https://github.com/bloodborne-native/bloodborne-launcher) | `launcher/` | The launcher (Tauri: React and Rust): profiles, saves, settings, mods, patches, starting the game and tracking trophies |
 | [bloodborne-runtime](https://github.com/bloodborne-native/bloodborne-runtime) | `runtime/` | Runs the game: loads its executable, provides the PS4 system libraries, draws on Metal by default or MoltenVK as a fallback |
-| [bloodborne-recomp](https://github.com/bloodborne-native/bloodborne-recomp) | `runtime/recomp/` | bbcpu, which runs the game's x86-64 code on arm64, and the recompiler that turns it into native code ahead of time |
+| [bbcpu](https://github.com/bloodborne-native/bbcpu) | `runtime/bbcpu/` | Runs the game's x86-64 code on arm64: decoder, interpreter, translator and the recompiled-code runtime |
+| [bloodborne-recomp](https://github.com/bloodborne-native/bloodborne-recomp) | `runtime/recomp/` | The recompiler that turns it into native code ahead of time |
 
 The runtime is built on [bbport](https://github.com/deadinside28/bloodborne_pc), the native Linux
 port this project started from, and on [shadPS4](https://github.com/shadps4-emu/shadPS4).

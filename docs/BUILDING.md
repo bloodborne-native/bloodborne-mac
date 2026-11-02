@@ -58,7 +58,7 @@ moved or deleted. Merged branches are deleted.
 ## Tests
 
 - `bash runtime/build.sh --test` runs the runtime's tests through `ctest`; the launcher's checks
-  are in its README; bloodborne-recomp's CI runs its CPU tests on Apple Silicon.
+  are in its README; bbcpu's CI runs its CPU tests on Apple Silicon.
 - Game tests copy the player's save (`runtime/tools/test_run.sh`, the runtime's
   [building guide](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/BUILDING.md)).
   Test games are background-only apps (`SDL_MAC_BACKGROUND_APP=1`): they never become the active
@@ -80,7 +80,7 @@ hand):
 
 ```bash
 git clone https://github.com/bloodborne-native/bloodborne-recomp.wiki.git /tmp/recomp-wiki
-python3 tools/wikigen.py recomp runtime/recomp /tmp/recomp-wiki   # app, runtime, recomp or launcher
+python3 tools/wikigen.py recomp runtime/recomp /tmp/recomp-wiki   # app, runtime, bbcpu, recomp or launcher
 ```
 
 Docs say what is true now: status, progress (20-block bars, one per 5%) and next steps in each

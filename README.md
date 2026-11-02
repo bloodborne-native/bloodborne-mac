@@ -134,14 +134,15 @@ and less memory for Macs with 8 and 16 GB. Details: [Status](docs/STATUS.md) and
 
 ## Under the hood
 
-The app is built from four repositories; a fifth, [bloodborne-ios](https://github.com/bloodborne-native/bloodborne-ios), runs the game on the iPhone:
+The app is built from five repositories; a sixth, [bloodborne-ios](https://github.com/bloodborne-native/bloodborne-ios), runs the game on the iPhone:
 
 | Repository | |
 |---|---|
 | **bloodborne-mac** (this one) | The macOS app: packaging, releases, player guides |
 | [bloodborne-launcher](https://github.com/bloodborne-native/bloodborne-launcher) | The independent launcher source, included here as `launcher/` |
 | [bloodborne-runtime](https://github.com/bloodborne-native/bloodborne-runtime) | Loads the game, answers its PS4 system calls and renders it, with Metal by default on macOS, here as `runtime/` |
-| [bloodborne-recomp](https://github.com/bloodborne-native/bloodborne-recomp) | bbcpu, which translates the game's x86-64 code to arm64 as it runs, and the recompiler (`runtime/recomp/`) |
+| [bbcpu](https://github.com/bloodborne-native/bbcpu) | Translates the game's x86-64 code to arm64 as it runs: a project of its own, usable by other PS4 ports |
+| [bloodborne-recomp](https://github.com/bloodborne-native/bloodborne-recomp) | The recompiler (`runtime/recomp/`) |
 | [bloodborne-ios](https://github.com/bloodborne-native/bloodborne-ios) | The iPhone app, a proof of concept built and installed from your own Mac: the launcher with the game inside |
 
 **The recompiler** turns the game's code, from the player's own copy, into native code ahead of

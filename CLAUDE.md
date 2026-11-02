@@ -2,7 +2,7 @@
 
 The macOS app of Bloodborne (PS4, CUSA03173 1.09) on Apple Silicon: the packaging, the releases,
 the player guides and the plan. The game itself is the `runtime/` submodule (bloodborne-runtime),
-with the CPU layer and recompiler in `runtime/recomp/` (bloodborne-recomp); the launcher is
+with the CPU layer in `runtime/bbcpu/` (bbcpu) and the recompiler in `runtime/recomp/` (bloodborne-recomp); the launcher is
 `launcher/` (bloodborne-launcher). Clone with `--recursive`.
 
 ## Read first
@@ -55,13 +55,14 @@ come from the game (`runtime/tools/grab.sh`), in English, never from the user's 
 - An Apple M3 Pro (18 GB): a healthy run with the defaults (Metal renderer, native 1080p, no
   upscaler) reads 48.0–49.2 FPS standing in Iosefka's Clinic (the runtime's `docs/BUILDING.md`; with
   lossless texture compression, adapted from MojahedAbushawish's work for bloodborne_mac_port).
-- The old `PabloVSouza/bloodborne_mac` repository only points to the four repositories.
+- The old `PabloVSouza/bloodborne_mac` repository only points to the project's repositories.
 
-## Working rules (all four repositories)
+## Working rules (all five repositories)
 
-- **The project is four repositories**, nested as submodules:
+- **The project is five repositories**, nested as submodules:
   [bloodborne-mac](https://github.com/bloodborne-native/bloodborne-mac) (the app) ⊃ `runtime/` =
-  [bloodborne-runtime](https://github.com/bloodborne-native/bloodborne-runtime) ⊃ `recomp/` =
+  [bloodborne-runtime](https://github.com/bloodborne-native/bloodborne-runtime) ⊃ `bbcpu/` =
+  [bbcpu](https://github.com/bloodborne-native/bbcpu) and `recomp/` =
   [bloodborne-recomp](https://github.com/bloodborne-native/bloodborne-recomp); the app also has
   `launcher/` = [bloodborne-launcher](https://github.com/bloodborne-native/bloodborne-launcher).
   Commit in the repository that owns the file, push it, then bump the submodule pointer in the

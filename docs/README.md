@@ -31,7 +31,7 @@
 
 ## Developing
 
-- [Architecture](ARCHITECTURE.md): the four repositories, the app, a launch, where it is going.
+- [Architecture](ARCHITECTURE.md): the five repositories, the app, a launch, where it is going.
 - [Building and releasing](BUILDING.md)
 - Each part's own docs: [runtime](https://github.com/bloodborne-native/bloodborne-runtime/tree/main/docs),
   [recompiler](https://github.com/bloodborne-native/bloodborne-recomp/tree/main/docs),

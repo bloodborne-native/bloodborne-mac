@@ -32,11 +32,15 @@ REPOS = {
                              'Layer-renderer', 'Layer-GPU-commands', 'Layer-user-data', 'Layer-shaders',
                              'Layer-textures-and-memory'])]),
     'recomp': ('bloodborne-recomp', {
-        'docs/RECOMPILATION.md': 'Recompilation', 'docs/ARM64_NATIVE.md': 'Native-arm64',
+        'docs/RECOMPILATION.md': 'Recompilation',
         'docs/CREDITS.md': 'Credits-and-licenses', 'docs/layers/README.md': 'PS4-layers',
         'docs/layers/game-code.md': 'Layer-game-code', 'docs/layers/memory-ordering.md': 'Layer-memory-ordering'},
-        [('Documentation', ['Recompilation-status', 'Recompilation', 'Native-arm64', 'Credits-and-licenses']),
+        [('Documentation', ['Recompilation-status', 'Recompilation', 'Credits-and-licenses']),
          ('The PS4 layers', ['PS4-layers', 'Layer-game-code', 'Layer-memory-ordering'])]),
+    'bbcpu': ('bbcpu', {
+        'docs/ARCHITECTURE.md': 'Architecture', 'docs/API.md': 'Writing-a-host',
+        'docs/CREDITS.md': 'Credits-and-licenses'},
+        [('Documentation', ['Architecture', 'Writing-a-host', 'Credits-and-licenses'])]),
     'launcher': ('bloodborne-launcher', {},
         [('Documentation', [])]),
 }
@@ -115,7 +119,7 @@ def main():
     for name, items in groups:
         side += [f'**{name}**', ''] + [f'- [{title(i).replace("Release ", "")}]({i})' for i in items] + ['']
     side += ['**Repositories**', '']
-    for r in ('bloodborne-mac', 'bloodborne-runtime', 'bloodborne-recomp', 'bloodborne-launcher'):
+    for r in ('bloodborne-mac', 'bloodborne-runtime', 'bbcpu', 'bloodborne-recomp', 'bloodborne-launcher'):
         side.append(f'- [{r}]({ORG}/{r}) ([wiki]({ORG}/{r}/wiki))')
     out['_Sidebar'] = '\n'.join(side) + '\n'
     for old in wiki.glob('*.md'):
