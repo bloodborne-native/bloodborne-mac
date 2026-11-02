@@ -29,7 +29,7 @@ own status: [runtime](https://github.com/bloodborne-native/bloodborne-runtime/bl
 - **The recompiler's CPU work:** calls left to the translator down from 69,600 a second to 9,400;
   what is left (memory ordering) waits for the maintainer's conditions.
 - **Understanding the game's code:** about 27,900 of the about 58,000 functions to understand have a name
-  or a known role, much of it compiler and template code, and 48,037 are placed in a class or a source
+  or a known role, much of it compiler and template code, and 48,043 are placed in a class or a source
   file. Class names, the game's method registry, state machine steps and source file boundaries came from
   the executable, and EzState's opcodes are mostly named. What is left is read by hand, a few at a time
   ([where it stands](https://github.com/bloodborne-native/bloodborne-recomp/blob/main/docs/RECOMPILATION.md#annotations)).
