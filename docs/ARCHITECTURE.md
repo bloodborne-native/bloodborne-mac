@@ -85,7 +85,8 @@ is in [Status](ROADMAP.md#the-ps4-layers):
   compiled into a native library, checked against calls recorded from the original. Every
   function runs recompiled, with less CPU time than the translator, and the launcher builds the
   library on the player's Mac. The annotations named the engine's render code, its synchronization and its
-  busiest functions, which the next steps use
+  busiest functions, which the next steps use, and the executable itself gives classes, source files and
+  much of the rest's place
   ([Recompilation](https://github.com/bloodborne-native/bloodborne-recomp/blob/main/docs/RECOMPILATION.md)).
 - **The native renderer** is the goal, not what runs today. The renderer reaches Metal directly on
   macOS, without Vulkan or MoltenVK (MoltenVK stays selectable; Linux keeps its Vulkan backend),

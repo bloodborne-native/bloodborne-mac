@@ -20,7 +20,7 @@ rows measure different things, so they are not averaged into one number.
 
 | Layer | What it does | Native | What the number counts | What is left |
 |---|---|---|---|---|
-| **[The game's code](https://github.com/bloodborne-native/bloodborne-recomp/blob/main/docs/layers/game-code.md)** | PS4 x86-64 code translated while the game runs | 96% `███████████████████░` | 10,861,735 of 11,268,132 instructions recompiled; opt-in, the translator is still the default | The default; import stubs and code rewritten while running |
+| **[The game's code](https://github.com/bloodborne-native/bloodborne-recomp/blob/main/docs/layers/game-code.md)** | PS4 x86-64 code translated while the game runs | 96% `███████████████████░` | 10,284,725 of 10,691,122 instructions recompiled; opt-in, the translator is still the default | The default; import stubs and code rewritten while running |
 | **[The PS4's C and file libraries](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/layers/c-libraries.md)** | `libc.prx` and `libSceFios2.prx` run as game code | 94% `██████████████████░░` | 4,453 of 4,759 functions recompiled; opt-in with the library, and short tests so far | Long play; what stays translated on purpose |
 | **[The PS4's system](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/layers/system.md)** | Threads, memory, files, saves, input, audio, network, trophies | 0% `░░░░░░░░░░░░░░░░░░░░` | The game still makes PS4 system calls, and the runtime translates each one. No PS4 firmware runs: all of the answers are our code | Recompiled code calling the platform directly |
 | **[The renderer](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/layers/renderer.md)** | PS4 commands and shaders translated into Metal calls every frame | 0% `░░░░░░░░░░░░░░░░░░░░` | Every frame is still translated. One translation is gone: on macOS the renderer reaches Metal directly, without Vulkan or MoltenVK | The renderer working from the engine, not from PS4 commands: the rows below |
@@ -159,6 +159,11 @@ Where each landed; the release notes say what changed for players.
   `aa47a95`, runtime `8d2d469`, launcher `adec5ac`).
 - The annotations: the engine's render code, synchronization and 20 busiest functions named and described
   (recomp `annotations/`, 2026-10-28).
+- The function scanner stops at the end of code: 62,122 of 241,821 functions were read-only data
+  (recomp `622e0f8`, 2026-11-02).
+- Class names tied to their vtables, the method registry, step tables and object file boundaries read from
+  the executable: about 18,100 functions identified and 47,917 placed
+  (recomp `tools/recomp/names.py`, 2026-11-02).
 - A faster translator (recomp #15, #16, #17, #18) and the runtime's own math and wide-string
   calls (runtime #7); the game's threads at user-interactive QoS (runtime #8).
 
