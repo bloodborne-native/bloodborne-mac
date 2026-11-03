@@ -28,7 +28,7 @@ own status: [runtime](https://github.com/bloodborne-native/bloodborne-runtime/bl
   the whole game decoded); next, the iPhone's compact memory layout as a Mac mode, toward 8 GB Macs.
 - **The recompiler's CPU work:** calls left to the translator down from 69,600 a second to 9,400;
   what is left (memory ordering) waits for the maintainer's conditions.
-- **Understanding the game's code:** about 30,400 of the about 58,000 functions to understand have a name
+- **Understanding the game's code:** about 30,500 of the about 58,000 functions to understand have a name
   or a known role, much of it compiler and template code, and 48,665 are placed in a class or a source
   file. Class names, the game's method registry, state machine steps and source file boundaries came from
   the executable, and EzState's opcodes are mostly named. What is left is read by hand, a few at a time
