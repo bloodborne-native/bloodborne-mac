@@ -162,7 +162,7 @@ Where each landed; the release notes say what changed for players.
 - The function scanner stops at the end of code: 62,122 of 241,821 functions were read-only data
   (recomp `622e0f8`, 2026-11-02).
 - Class names tied to their vtables, the method registry, step tables and object file boundaries read from
-  the executable: about 31,500 functions identified and 49,393 placed
+  the executable: about 31,500 functions identified and 49,394 placed
   (recomp `tools/recomp/names.py`, 2026-11-02).
 - A faster translator (recomp #15, #16, #17, #18) and the runtime's own math and wide-string
   calls (runtime #7); the game's threads at user-interactive QoS (runtime #8).
