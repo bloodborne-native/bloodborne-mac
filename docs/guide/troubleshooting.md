@@ -44,6 +44,8 @@ Please do not report problems with this port to shadPS4 or to bbport.
 
 | Problem | Fixed in |
 |---|---|
+| The game stopped after long play with "GPU library assertion failed" (`Unknown data_format=15`, exit code 23) | 0.9.5 |
+| Keyboard keys could not be assigned in Controls on macOS 14 and later | 0.9.5 |
 | Building the recompiled code stayed on "Checking your game" and Cancel did nothing; leaving the page could show the build as cancelled | 0.9.2 |
 | Cloth fluttering and the play time counted slow above 30 FPS | 0.9.2 |
 | A rare crash after long sessions (exit code 139, the render thread at `0x2169edc`) | 0.9.2 |

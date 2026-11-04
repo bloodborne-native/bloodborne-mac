@@ -10,7 +10,9 @@ own status: [runtime](https://github.com/bloodborne-native/bloodborne-runtime/bl
 
 ## At a glance
 
-- **Released:** 0.9.4, on 2026-11-02: The Hunter's Dream sign-in from the launcher, its connection
+- **Released:** 0.9.5, on 2026-11-04: shaders compiled ahead of time (opt-in) and on several cores
+  during play, the `data_format=15` stop fixed, keyboard assignment on macOS 14+
+  ([notes](releases/v0.9.5.md)). 0.9.4, on 2026-11-02: The Hunter's Dream sign-in from the launcher, its connection
   crash fixed and GPU-only textures kept ([notes](releases/v0.9.4.md)). 0.9.3, on 2026-10-30: about a third faster on the Metal renderer (lossless
   texture compression), less processor time, and a recompiled library that survives updates and
   is updated in seconds to minutes instead of rebuilt ([notes](releases/v0.9.3.md)). 0.9.0 brought the native Metal
@@ -33,7 +35,7 @@ own status: [runtime](https://github.com/bloodborne-native/bloodborne-runtime/bl
   file. Class names, the game's method registry, state machine steps and source file boundaries came from
   the executable, and EzState's opcodes are mostly named. What is left is read by hand, a few at a time
   ([where it stands](https://github.com/bloodborne-native/bloodborne-recomp/blob/main/docs/RECOMPILATION.md#annotations)).
-- **On main since 0.9.4:** the function scanner no longer takes read-only data for code: 62,122 of the
+- **A smaller recompiled library** (0.9.5): the function scanner no longer takes read-only data for code: 62,122 of the
   241,821 functions were data, so a rebuilt library is 296 MB, built in 5.5 minutes in a test, and
   48.1 FPS in Iosefka's Clinic with it.
 
@@ -50,6 +52,7 @@ runs on macOS, Windows and Linux; game integration exists on macOS and on iOS.
 
 | Version | Highlights |
 |---|---|
+| 0.9.5 | Compile shaders ahead of time (opt-in, 292 of 300 Clinic shaders ready); shaders compiled on several cores during play; the `data_format=15` stop fixed (#11); keyboard assignment on macOS 14+ (#12); the game prepares itself at start without Python; Aspect ratio Auto at the screen's own ratio |
 | 0.9.4 | The Hunter's Dream sign-in from the launcher; its connection crash fixed; GPU-only textures kept |
 | 0.9.3 | About a third faster on the Metal renderer (lossless texture compression, MojahedAbushawish's work for bloodborne_mac_port); the frame-preparation threads on the fast cores; the recompiled library kept across updates and updated in place; the hooked functions compiled too; a damaged pipeline cache recovered from |
 | 0.9.2 | The recompiled-code build fixed (it starts, survives leaving the page, counts as it compiles, Cancel stops it all); cloth at high frame rates and the play time (bbport 0.7); the `0x2169edc` crash guarded (bbport 0.7); about 2 GB less memory and fewer translator calls with the recompiled code |
@@ -69,15 +72,10 @@ ported by hand (the runtime's [Upstream](https://github.com/bloodborne-native/bl
 
 ## On main
 
-Main is 0.9.4, plus:
+Main is 0.9.5, plus:
 
-- **The executable and the patches prepared in C** (runtime `src/runtime_prepare.c`,
-  `src/runtime_patches.c`): the game builds them at start, without Python; `bb-patches` checks the
-  C against `scripts/patches.py` byte for byte.
-- **Touch controls** (runtime): on-screen sticks and buttons on a touch screen without a gamepad,
-  in the menu's colours (design after ducvd89/Bloodborne-Android); `BB_TOUCH_CONTROLS`, and on the
-  iPhone the launcher's Controls page, turns them off or on.
-- **Aspect ratio Auto** with the screen's own ratio at the usual heights.
+- **Test windows take the keyboard** (runtime `tools/mac_bench.sh`): test games are normal apps;
+  `BB_BENCH_BACKGROUND=1` keeps one in the background. `BB_KEY_TRACE=1` logs key presses.
 - **The iPhone work** (above), from the same runtime and launcher.
 
 ## Areas
