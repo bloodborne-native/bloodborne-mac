@@ -44,6 +44,7 @@ Please do not report problems with this port to shadPS4 or to bbport.
 
 | Problem | Fixed in |
 |---|---|
+| With Online mode on, the title screen skipped its Play Online / Play Offline choice | 0.9.7 |
 | Pressing ⌘ while holding a key (W, Q or H) closed or hid the game | 0.9.6 |
 | The game stopped after long play with "GPU library assertion failed" (`Unknown data_format=15`, exit code 23) | 0.9.5 |
 | Keyboard keys could not be assigned in Controls on macOS 14 and later | 0.9.5 |

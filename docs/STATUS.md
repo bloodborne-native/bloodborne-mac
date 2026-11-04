@@ -10,7 +10,8 @@ own status: [runtime](https://github.com/bloodborne-native/bloodborne-runtime/bl
 
 ## At a glance
 
-- **Released:** 0.9.6, on 2026-11-04: ⌘ no longer closes the game (#14) and the shader compile step
+- **Released:** 0.9.7, on 2026-11-04: Online mode shows the title screen's Play Online / Play
+  Offline choice (#15) ([notes](releases/v0.9.7.md)). 0.9.6, on 2026-11-04: ⌘ no longer closes the game (#14) and the shader compile step
   runs again after a macOS update ([notes](releases/v0.9.6.md)). 0.9.5, on 2026-11-04: shaders compiled ahead of time (opt-in) and on several cores
   during play, the `data_format=15` stop fixed, keyboard assignment on macOS 14+
   ([notes](releases/v0.9.5.md)). 0.9.4, on 2026-11-02: The Hunter's Dream sign-in from the launcher, its connection
@@ -53,6 +54,7 @@ runs on macOS, Windows and Linux; game integration exists on macOS and on iOS.
 
 | Version | Highlights |
 |---|---|
+| 0.9.7 | Online mode shows the title screen's Play Online / Play Offline choice (#15) |
 | 0.9.6 | ⌘ no longer closes or hides the game while a key is held (#14); the compile step runs again after a macOS update or on another Mac |
 | 0.9.5 | Compile shaders ahead of time (opt-in, 292 of 300 Clinic shaders ready); shaders compiled on several cores during play; the `data_format=15` stop fixed (#11); keyboard assignment on macOS 14+ (#12); the game prepares itself at start without Python; Aspect ratio Auto at the screen's own ratio |
 | 0.9.4 | The Hunter's Dream sign-in from the launcher; its connection crash fixed; GPU-only textures kept |
@@ -74,10 +76,8 @@ ported by hand (the runtime's [Upstream](https://github.com/bloodborne-native/bl
 
 ## On main
 
-Main is 0.9.6, plus:
+Main is 0.9.7. Work for developers since 0.9.5, not seen by players:
 
-- **Online mode shows the title screen's PLAY ONLINE / PLAY OFFLINE choice** (#15); without it the
-  choice is still skipped. `BB_SKIP_NETWORK_CHOICE=0` or `=1` sets it either way.
 - **Test windows take the keyboard** (runtime `tools/mac_bench.sh`): test games are normal apps;
   `BB_BENCH_BACKGROUND=1` keeps one in the background. `BB_KEY_TRACE=1` logs key presses.
 - **The iPhone work** (above), from the same runtime and launcher.
