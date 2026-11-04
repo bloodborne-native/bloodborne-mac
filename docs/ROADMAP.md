@@ -34,15 +34,15 @@ rows measure different things, so they are not averaged into one number.
 ## Priorities
 
 Ordered by what each layer would gain for the game: frame rate, stalls, CPU and memory. **Measure
-first:** the game is limited by the GPU at 1080p on an M3 Pro, and no Metal System Trace of a frame
-has been recorded, so the first two rows rest on MoltenVK's figures and on the memory they would
-save. CPU savings do not raise the frame rate on an M3 Pro; they matter for heat, battery and weaker
+first:** the game is limited by the GPU at 1080p on an M3 Pro. Only one Metal System Trace of
+the Metal renderer exists, of a light view (the GPU idle 21% of the time, as on MoltenVK), so the
+first two rows rest mostly on MoltenVK's figures and on the memory they would save. CPU savings do not raise the frame rate on an M3 Pro; they matter for heat, battery and weaker
 CPUs. Figures are from an M3 Pro in Iosefka's Clinic unless they say otherwise.
 
 | # | Layer | Frame rate | CPU | Memory | Why here |
 |---|---|---|---|---|---|
 | 1 | [PS4 textures and memory](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/layers/textures-memory.md) | Some: copies about 2 ms of GPU on MoltenVK | Less tracking; not measured | **About 1–1.5 GB** | The largest memory saving, needed for 8 and 16 GB Macs and for PCs with a separate GPU memory |
-| 2 | [The renderer](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/layers/renderer.md) | **The largest:** 6–8 ms of GPU idle a frame on MoltenVK; not measured on Metal | Recording takes about 1.8 cores | Not measured | The only layer shown to bound the frame rate |
+| 2 | [The renderer](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/layers/renderer.md) | **The largest:** 6–8 ms of GPU idle a frame on MoltenVK; about 3 ms (21% of the time) on Metal in a light clinic view | Recording takes about 1.8 cores | Not measured | The only layer shown to bound the frame rate |
 | 3 | [Shaders compiled during play](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/layers/shaders.md) | **Stalls:** worst frame 561 ms; 258 ms with recorded states | None in play | None | Felt the most in play, but only at first use; no change to the average |
 | 4 | [The game's code](https://github.com/bloodborne-native/bloodborne-recomp/blob/main/docs/layers/game-code.md) | None on an M3 Pro | **14% less game CPU** (0.4–0.6 core), already built | Not measured against the translator | Stays opt-in for now: the gain does not yet justify a build of about 14 minutes (the maintainer, 2026-11-02) |
 | 5 | [PS4 GPU commands](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/layers/gpu-commands.md) | None measured | About 0.6 core | Not measured | Needs draws taken from the engine first |
