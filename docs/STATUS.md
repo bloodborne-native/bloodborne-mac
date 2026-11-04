@@ -77,6 +77,13 @@ Main is 0.9.5, plus:
 - **Test windows take the keyboard** (runtime `tools/mac_bench.sh`): test games are normal apps;
   `BB_BENCH_BACKGROUND=1` keeps one in the background. `BB_KEY_TRACE=1` logs key presses.
 - **The iPhone work** (above), from the same runtime and launcher.
+- **⌘ no longer closes the game** ([#14](https://github.com/bloodborne-native/bloodborne-mac/issues/14)):
+  the game's menu bar has no Command shortcuts, so a held key (W walks) and ⌘ no longer make ⌘W.
+- **The compile step runs again after a macOS update or on another Mac**, when Metal discards the
+  compiled pipelines.
+- **The first Metal System Trace of the Metal renderer:** the GPU idles about 1 ms a frame, so the
+  frame rate left is in its own work, the G-buffer pass first (the runtime's
+  [performance notes](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/PERFORMANCE.md#where-a-frames-time-goes)).
 
 ## Areas
 
