@@ -30,9 +30,6 @@ Please do not report problems with this port to shadPS4 or to bbport.
 ## Known issues
 
 - **Blood on already killed enemies** can look pale with bright edges after reloading a save.
-- **Pressing ⌘ while holding W, Q or H closes or hides the game** in 0.9.5
-  ([#14](https://github.com/bloodborne-native/bloodborne-mac/issues/14)); fixed for the next
-  version. Until then, avoid ⌘ while playing.
 
 ## Good to know
 
@@ -47,6 +44,7 @@ Please do not report problems with this port to shadPS4 or to bbport.
 
 | Problem | Fixed in |
 |---|---|
+| Pressing ⌘ while holding a key (W, Q or H) closed or hid the game | 0.9.6 |
 | The game stopped after long play with "GPU library assertion failed" (`Unknown data_format=15`, exit code 23) | 0.9.5 |
 | Keyboard keys could not be assigned in Controls on macOS 14 and later | 0.9.5 |
 | Building the recompiled code stayed on "Checking your game" and Cancel did nothing; leaving the page could show the build as cancelled | 0.9.2 |

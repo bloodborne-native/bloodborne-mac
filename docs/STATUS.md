@@ -3,14 +3,15 @@
 [← Documentation](README.md)
 
 Where the whole project stands: what is released, what is on main, what is being worked on and
-what comes next. Updated 2026-11-02. The plan in order: [Roadmap](ROADMAP.md). Each repository's
+what comes next. Updated 2026-11-04. The plan in order: [Roadmap](ROADMAP.md). Each repository's
 own status: [runtime](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/NATIVE_RENDERER.md#the-layers),
 [recompiler](https://github.com/bloodborne-native/bloodborne-recomp/blob/main/docs/RECOMPILATION.md#milestones),
 [launcher](https://github.com/bloodborne-native/bloodborne-launcher/blob/main/README.md#status).
 
 ## At a glance
 
-- **Released:** 0.9.5, on 2026-11-04: shaders compiled ahead of time (opt-in) and on several cores
+- **Released:** 0.9.6, on 2026-11-04: ⌘ no longer closes the game (#14) and the shader compile step
+  runs again after a macOS update ([notes](releases/v0.9.6.md)). 0.9.5, on 2026-11-04: shaders compiled ahead of time (opt-in) and on several cores
   during play, the `data_format=15` stop fixed, keyboard assignment on macOS 14+
   ([notes](releases/v0.9.5.md)). 0.9.4, on 2026-11-02: The Hunter's Dream sign-in from the launcher, its connection
   crash fixed and GPU-only textures kept ([notes](releases/v0.9.4.md)). 0.9.3, on 2026-10-30: about a third faster on the Metal renderer (lossless
@@ -52,6 +53,7 @@ runs on macOS, Windows and Linux; game integration exists on macOS and on iOS.
 
 | Version | Highlights |
 |---|---|
+| 0.9.6 | ⌘ no longer closes or hides the game while a key is held (#14); the compile step runs again after a macOS update or on another Mac |
 | 0.9.5 | Compile shaders ahead of time (opt-in, 292 of 300 Clinic shaders ready); shaders compiled on several cores during play; the `data_format=15` stop fixed (#11); keyboard assignment on macOS 14+ (#12); the game prepares itself at start without Python; Aspect ratio Auto at the screen's own ratio |
 | 0.9.4 | The Hunter's Dream sign-in from the launcher; its connection crash fixed; GPU-only textures kept |
 | 0.9.3 | About a third faster on the Metal renderer (lossless texture compression, MojahedAbushawish's work for bloodborne_mac_port); the frame-preparation threads on the fast cores; the recompiled library kept across updates and updated in place; the hooked functions compiled too; a damaged pipeline cache recovered from |
@@ -72,15 +74,11 @@ ported by hand (the runtime's [Upstream](https://github.com/bloodborne-native/bl
 
 ## On main
 
-Main is 0.9.5, plus:
+Main is 0.9.6, plus:
 
 - **Test windows take the keyboard** (runtime `tools/mac_bench.sh`): test games are normal apps;
   `BB_BENCH_BACKGROUND=1` keeps one in the background. `BB_KEY_TRACE=1` logs key presses.
 - **The iPhone work** (above), from the same runtime and launcher.
-- **⌘ no longer closes the game** ([#14](https://github.com/bloodborne-native/bloodborne-mac/issues/14)):
-  the game's menu bar has no Command shortcuts, so a held key (W walks) and ⌘ no longer make ⌘W.
-- **The compile step runs again after a macOS update or on another Mac**, when Metal discards the
-  compiled pipelines.
 - **The first Metal System Trace of the Metal renderer:** the GPU idles about 1 ms a frame, so the
   frame rate left is in its own work, the G-buffer pass first (the runtime's
   [performance notes](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/PERFORMANCE.md#where-a-frames-time-goes)).
