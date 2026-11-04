@@ -38,7 +38,8 @@ can stop and continue later. New effects then stop pausing the game the first ti
 The game also notes how it draws as you play, and uses that to prepare more the next time it
 starts, which takes less time than the first run and shortens pauses while loading. So the second
 start after you turn this on does the most good. It runs again now and then as you reach new
-places, with progress on screen.
+places, with progress on screen. After a macOS update, or on another Mac, it runs again once,
+because macOS discards the compiled pipelines.
 
 ## Recompiled code
 
