@@ -76,6 +76,8 @@ ported by hand (the runtime's [Upstream](https://github.com/bloodborne-native/bl
 
 Main is 0.9.6, plus:
 
+- **Online mode shows the title screen's PLAY ONLINE / PLAY OFFLINE choice** (#15); without it the
+  choice is still skipped. `BB_SKIP_NETWORK_CHOICE=0` or `=1` sets it either way.
 - **Test windows take the keyboard** (runtime `tools/mac_bench.sh`): test games are normal apps;
   `BB_BENCH_BACKGROUND=1` keeps one in the background. `BB_KEY_TRACE=1` logs key presses.
 - **The iPhone work** (above), from the same runtime and launcher.
