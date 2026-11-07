@@ -10,7 +10,7 @@ project it is based on.
 - [**deadinside28/bloodborne_pc**](https://github.com/deadinside28/bloodborne_pc) (bbport) by
   deadinside28: the native Linux port this project started from as a fork, and a separate
   repository since October 2026. Its releases up to **0.51** are merged with their history, and parts
-  of 0.6 are ported by hand (the runtime's [Upstream](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/UPSTREAM.md)
+  of 0.6 and 0.7 are ported by hand (the runtime's [Upstream](https://github.com/bloodborne-native/bloodborne-runtime/blob/main/docs/UPSTREAM.md)
   page says what came from where). It provides the loader, the PS4 runtime, the
   renderer extensions, the upscalers, the game-specific fixes and the original launcher. Code
   taken from it keeps its authorship in the git history.

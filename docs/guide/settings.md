@@ -110,12 +110,15 @@ Dark Souls III's PC layout: **WASD** move, **Space** dodge, **Left Shift** run (
 jumps), **F**/**Enter** interact, **left click** attack, **Shift + left click** strong attack,
 **right click** shoot, **Q** blood vial, **E** transform the weapon, **Tab**/**R** quick item,
 **1**/**2** left/right weapon, **3**/**4** d-pad up/down, **C** lock-on, **Escape** menu (and back
-inside menus), **G** gestures. Click into the window to give it the mouse; **F1** releases it.
+inside menus), **G** gestures, **Left Option** (held) walk slowly. Click into the window to give
+it the mouse; **F1** releases it.
 
 The mouse turns the camera directly (no stick dead zone or speed limit), and points and clicks
 in the game's menus: hover selects, left click confirms, right click goes back, the wheel
-scrolls. Every key can be remapped on the **Controls** tab, also to a combination with Shift,
-Ctrl or Alt.
+scrolls, and the middle and side buttons press what they are bound to (the side buttons are L1
+and R2 by default, in play and in menus). Every key can be remapped on the **Controls** tab,
+also to a combination with Shift, Ctrl or Alt. Change controls there, not in `bbport.ini`: the
+launcher writes that file again from its own settings each time the game starts.
 
 **Button prompts** follow the device you used last: with the keyboard and mouse the game's own
 hints ("Examine", item pick-ups, tutorials) show the bound key or mouse button, with an Xbox or

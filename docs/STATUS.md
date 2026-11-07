@@ -76,7 +76,16 @@ ported by hand (the runtime's [Upstream](https://github.com/bloodborne-native/bl
 
 ## On main
 
-Main is 0.9.7. Work for developers since 0.9.5, not seen by players:
+Main is 0.9.7, plus, for players (not yet released):
+
+- **A walk key** (#16): Left Option, held, walks slowly (from bbport 0.7); a Walk row in Controls.
+- **The mouse's middle and side buttons work in the game's menus** (#18).
+- **In fullscreen the menus' pointer stays off the screen's top and bottom rows** (#17), where
+  macOS slid in the menu bar or the Dock and the game lost the mouse until a click.
+- **The app's start script finds its own program again** (since 0.9.5 outputs above 1080p and
+  upscaled scenes started without their render size).
+
+Work for developers since 0.9.5, not seen by players:
 
 - **Test windows take the keyboard** (runtime `tools/mac_bench.sh`): test games are normal apps;
   `BB_BENCH_BACKGROUND=1` keeps one in the background. `BB_KEY_TRACE=1` logs key presses.
