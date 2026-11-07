@@ -44,6 +44,9 @@ Please do not report problems with this port to shadPS4 or to bbport.
 
 | Problem | Fixed in |
 |---|---|
+| The mouse's side buttons did nothing in the game's menus | 0.9.8 |
+| In fullscreen, touching the screen's top or bottom edge with a menu open lost the mouse until a click | 0.9.8 |
+| Outputs above 1080p and upscaled scenes started without their render size (`bin/bb-probe: No such file or directory` in the log) | 0.9.8 |
 | With Online mode on, the title screen skipped its Play Online / Play Offline choice | 0.9.7 |
 | Pressing ⌘ while holding a key (W, Q or H) closed or hid the game | 0.9.6 |
 | The game stopped after long play with "GPU library assertion failed" (`Unknown data_format=15`, exit code 23) | 0.9.5 |

@@ -10,7 +10,8 @@ own status: [runtime](https://github.com/bloodborne-native/bloodborne-runtime/bl
 
 ## At a glance
 
-- **Released:** 0.9.7, on 2026-11-04: Online mode shows the title screen's Play Online / Play
+- **Released:** 0.9.8, on 2026-11-07: a walk key, the mouse's side buttons in menus and the
+  fullscreen pointer kept off the menu bar and Dock (#16–#18) ([notes](releases/v0.9.8.md)). 0.9.7, on 2026-11-04: Online mode shows the title screen's Play Online / Play
   Offline choice (#15) ([notes](releases/v0.9.7.md)). 0.9.6, on 2026-11-04: ⌘ no longer closes the game (#14) and the shader compile step
   runs again after a macOS update ([notes](releases/v0.9.6.md)). 0.9.5, on 2026-11-04: shaders compiled ahead of time (opt-in) and on several cores
   during play, the `data_format=15` stop fixed, keyboard assignment on macOS 14+
@@ -54,6 +55,7 @@ runs on macOS, Windows and Linux; game integration exists on macOS and on iOS.
 
 | Version | Highlights |
 |---|---|
+| 0.9.8 | A walk key, Left Option held (#16, from bbport 0.7); the mouse's middle and side buttons in game menus (#18); in fullscreen the pointer kept off the menu bar and Dock rows (#17); outputs above 1080p and upscaled scenes get their render size again |
 | 0.9.7 | Online mode shows the title screen's Play Online / Play Offline choice (#15) |
 | 0.9.6 | ⌘ no longer closes or hides the game while a key is held (#14); the compile step runs again after a macOS update or on another Mac |
 | 0.9.5 | Compile shaders ahead of time (opt-in, 292 of 300 Clinic shaders ready); shaders compiled on several cores during play; the `data_format=15` stop fixed (#11); keyboard assignment on macOS 14+ (#12); the game prepares itself at start without Python; Aspect ratio Auto at the screen's own ratio |
@@ -76,16 +78,7 @@ ported by hand (the runtime's [Upstream](https://github.com/bloodborne-native/bl
 
 ## On main
 
-Main is 0.9.7, plus, for players (not yet released):
-
-- **A walk key** (#16): Left Option, held, walks slowly (from bbport 0.7); a Walk row in Controls.
-- **The mouse's middle and side buttons work in the game's menus** (#18).
-- **In fullscreen the menus' pointer stays off the screen's top and bottom rows** (#17), where
-  macOS slid in the menu bar or the Dock and the game lost the mouse until a click.
-- **The app's start script finds its own program again** (since 0.9.5 outputs above 1080p and
-  upscaled scenes started without their render size).
-
-Work for developers since 0.9.5, not seen by players:
+Main is 0.9.8. Work for developers since 0.9.5, not seen by players:
 
 - **Test windows take the keyboard** (runtime `tools/mac_bench.sh`): test games are normal apps;
   `BB_BENCH_BACKGROUND=1` keeps one in the background. `BB_KEY_TRACE=1` logs key presses.
