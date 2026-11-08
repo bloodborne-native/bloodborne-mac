@@ -56,6 +56,12 @@ Changes taken from other ports of bbport, with thanks (details and commits in th
   - the texture cache hashing whole images when checking a possibly changed one (the item
     picture on the loading screen).
 
+## Contributors
+
+Pull requests are taken with their authors' names in the commits; some are measured and landed by
+hand instead of merged. [classicrob](https://github.com/classicrob): exact barrier read ranges and
+merged interval sets for the copy hoist (runtime PR #11).
+
 ## Libraries
 
 - [MoltenVK](https://github.com/KhronosGroup/MoltenVK) (Apache-2.0)
