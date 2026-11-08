@@ -44,6 +44,7 @@ Please do not report problems with this port to shadPS4 or to bbport.
 
 | Problem | Fixed in |
 |---|---|
+| Controller buttons could not be assigned in Controls ("Couldn't save", `Library not loaded: @rpath/libSDL3.0.dylib`) and no controller was listed | 0.9.9 |
 | The mouse's side buttons did nothing in the game's menus | 0.9.8 |
 | In fullscreen, touching the screen's top or bottom edge with a menu open lost the mouse until a click | 0.9.8 |
 | Outputs above 1080p and upscaled scenes started without their render size (`bin/bb-probe: No such file or directory` in the log) | 0.9.8 |

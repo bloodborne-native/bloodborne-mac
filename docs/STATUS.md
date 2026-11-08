@@ -10,7 +10,8 @@ own status: [runtime](https://github.com/bloodborne-native/bloodborne-runtime/bl
 
 ## At a glance
 
-- **Released:** 0.9.8, on 2026-11-07: a walk key, the mouse's side buttons in menus and the
+- **Released:** 0.9.9, on 2026-11-08: controller buttons can be assigned in the launcher again
+  (#19) ([notes](releases/v0.9.9.md)). 0.9.8, on 2026-11-07: a walk key, the mouse's side buttons in menus and the
   fullscreen pointer kept off the menu bar and Dock (#16–#18) ([notes](releases/v0.9.8.md)). 0.9.7, on 2026-11-04: Online mode shows the title screen's Play Online / Play
   Offline choice (#15) ([notes](releases/v0.9.7.md)). 0.9.6, on 2026-11-04: ⌘ no longer closes the game (#14) and the shader compile step
   runs again after a macOS update ([notes](releases/v0.9.6.md)). 0.9.5, on 2026-11-04: shaders compiled ahead of time (opt-in) and on several cores
@@ -55,6 +56,7 @@ runs on macOS, Windows and Linux; game integration exists on macOS and on iOS.
 
 | Version | Highlights |
 |---|---|
+| 0.9.9 | Controller buttons can be assigned in the launcher again, and its controller list works (#19) |
 | 0.9.8 | A walk key, Left Option held (#16, from bbport 0.7); the mouse's middle and side buttons in game menus (#18); in fullscreen the pointer kept off the menu bar and Dock rows (#17); outputs above 1080p and upscaled scenes get their render size again |
 | 0.9.7 | Online mode shows the title screen's Play Online / Play Offline choice (#15) |
 | 0.9.6 | ⌘ no longer closes or hides the game while a key is held (#14); the compile step runs again after a macOS update or on another Mac |
@@ -78,12 +80,7 @@ ported by hand (the runtime's [Upstream](https://github.com/bloodborne-native/bl
 
 ## On main
 
-Main is 0.9.8, plus, for players (not yet released):
-
-- **Controller buttons can be assigned in the launcher again, and its controller list works**
-  (#19): the app's input reader could not load SDL3 since 0.9.0.
-
-Work for developers since 0.9.5, not seen by players:
+Main is 0.9.9. Work for developers since 0.9.5, not seen by players:
 
 - **Test windows take the keyboard** (runtime `tools/mac_bench.sh`): test games are normal apps;
   `BB_BENCH_BACKGROUND=1` keeps one in the background. `BB_KEY_TRACE=1` logs key presses.
