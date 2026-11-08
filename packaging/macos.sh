@@ -82,7 +82,12 @@ if leftovers=$(for f in "$app/Contents/MacOS/"* "$app/Contents/Frameworks/"*.dyl
     echo "References into the build tree remain:" >&2; echo "$leftovers" >&2; exit 1
 fi
 if missing=$(for f in "$app/Contents/MacOS/"* "$app/Contents/Frameworks/"*.dylib; do
-                  for ref in $(otool -L "$f" | awk '!/:$/ {print $1}' | grep '^@rpath/'); do
+                  refs=$(otool -L "$f" | awk '!/:$/ {print $1}' | grep '^@rpath/')
+                  # An @rpath reference needs a search path to resolve against (app issue #19:
+                  # bb-gpu-capabilities had none and could not load SDL3 on any Mac).
+                  [[ -z $refs || $f == *.dylib || $(otool -l "$f") == *'cmd LC_RPATH'* ]] ||
+                      echo "$f: no LC_RPATH for its @rpath libraries"
+                  for ref in $refs; do
                       [[ -f $app/Contents/Frameworks/${ref#@rpath/} ]] || echo "$f: $ref"
                   done; done) && [[ -n $missing ]]; then
     echo "Libraries the bundle does not carry:" >&2; echo "$missing" >&2; exit 1

@@ -78,7 +78,12 @@ ported by hand (the runtime's [Upstream](https://github.com/bloodborne-native/bl
 
 ## On main
 
-Main is 0.9.8. Work for developers since 0.9.5, not seen by players:
+Main is 0.9.8, plus, for players (not yet released):
+
+- **Controller buttons can be assigned in the launcher again, and its controller list works**
+  (#19): the app's input reader could not load SDL3 since 0.9.0.
+
+Work for developers since 0.9.5, not seen by players:
 
 - **Test windows take the keyboard** (runtime `tools/mac_bench.sh`): test games are normal apps;
   `BB_BENCH_BACKGROUND=1` keeps one in the background. `BB_KEY_TRACE=1` logs key presses.
