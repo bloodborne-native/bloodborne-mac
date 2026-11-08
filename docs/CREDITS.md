@@ -60,7 +60,8 @@ Changes taken from other ports of bbport, with thanks (details and commits in th
 
 Pull requests are taken with their authors' names in the commits; some are measured and landed by
 hand instead of merged. [classicrob](https://github.com/classicrob): exact barrier read ranges and
-merged interval sets for the copy hoist (runtime PR #11).
+merged interval sets for the copy hoist (runtime PR #11); render passes kept open across barriers,
+encoders ordered by fences, small copies as compute on Metal (runtime PR #12).
 
 ## Libraries
 
