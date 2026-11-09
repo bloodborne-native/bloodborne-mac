@@ -110,8 +110,9 @@ Dark Souls III's PC layout: **WASD** move, **Space** dodge, **Left Shift** run (
 jumps), **F**/**Enter** interact, **left click** attack, **Shift + left click** strong attack,
 **right click** shoot, **Q** blood vial, **E** transform the weapon, **Tab**/**R** quick item,
 **1**/**2** left/right weapon, **3**/**4** d-pad up/down, **C** lock-on, **Escape** menu (and back
-inside menus), **G** gestures, **Left Option** (held) walk slowly. Click into the window to give
-it the mouse; **F1** releases it.
+inside menus), **G** gestures, **Left Option** (held) walk slowly, **⌘Q** quit the game. Click
+into the window to give it the mouse; **F1** releases it. ⌘Q quits only when Q is pressed with ⌘
+already held, so touching ⌘ while holding a key never closes the game.
 
 The mouse turns the camera directly (no stick dead zone or speed limit), and points and clicks
 in the game's menus: hover selects, left click confirms, right click goes back, the wheel
