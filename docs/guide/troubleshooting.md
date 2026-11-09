@@ -44,6 +44,7 @@ Please do not report problems with this port to shadPS4 or to bbport.
 
 | Problem | Fixed in |
 |---|---|
+| ⌘Q did nothing in the game (since 0.9.6) | 0.9.11 |
 | With a 16:10 output at 1920×1200 the game closed at start (exit code 139) | 0.9.10 |
 | Controller buttons could not be assigned in Controls ("Couldn't save", `Library not loaded: @rpath/libSDL3.0.dylib`) and no controller was listed | 0.9.9 |
 | The mouse's side buttons did nothing in the game's menus | 0.9.8 |
