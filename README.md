@@ -22,9 +22,12 @@
 > **Our goal is to make Bloodborne truly native on any platform**, removing every layer that stands
 > in for a PS4. This is an independent development effort beyond porting bbport to macOS.
 >
-> For the dedicated macOS port of bbport, see **[bmy/bbport-mac](https://github.com/bmy/bbport-mac)**.
-> It is a separate project and also describes itself as experimental. Please report problems with
-> bloodborne-native [here](https://github.com/bloodborne-native/bloodborne-mac/issues).
+> For other Bloodborne ports on the Mac, see
+> **[Wooloomooloo2/bloodborne_mac_port](https://github.com/Wooloomooloo2/bloodborne_mac_port)**
+> (actively maintained: the game's own code under Rosetta 2, rendered natively with Metal) and
+> **[bmy/bbport-mac](https://github.com/bmy/bbport-mac)** (the dedicated macOS port of bbport). Both
+> are separate projects and describe themselves as experimental or a work in progress. Please report
+> problems with bloodborne-native [here](https://github.com/bloodborne-native/bloodborne-mac/issues).
 
 <p align="center">
   <a href="https://github.com/bloodborne-native/bloodborne-mac/releases/latest"><strong>Download</strong></a>
