@@ -59,9 +59,9 @@ Advanced options apply at the next start.
 - **Character motion vectors:** off by default. They make moving characters much sharper with
   FSR for a few frames per second.
 - **Low memory mode** (Graphics, off by default): gives the GPU only the part of the game's
-  memory it uses, instead of all of it. In Iosefka's Clinic on an M3 Pro the GPU memory went from
-  about 8.4 GB to 3.6 GB, at the same frame rate; it grows as you visit more areas, to about
-  6.8 GB after a 50-minute session. Turn it on with 16 GB of memory or less: Home suggests it on
+  memory it uses, instead of all of it, and keeps at most 2 GB of it, letting go of what it used
+  least recently. In Iosefka's Clinic on an M3 Pro the GPU memory went from about 8.4 GB to under
+  2.8 GB, at the same frame rate. Turn it on with 16 GB of memory or less: Home suggests it on
   such devices. It applies at the next start.
 - **Output above 1080p:** use an upscaler preset; the memory estimate (Graphics, and the menu)
   shows what the game will use against your Mac's memory, in amber above three quarters of it.
