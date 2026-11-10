@@ -10,7 +10,8 @@ own status: [runtime](https://github.com/bloodborne-native/bloodborne-runtime/bl
 
 ## At a glance
 
-- **Released:** 0.9.11, on 2026-11-09: ⌘Q quits the game again, as a binding in Controls (#20)
+- **Released:** 0.10.0, on 2026-11-10: much less memory with the Metal renderer (about 3.6 GB
+  counted in the clinic instead of 8.4) ([notes](releases/v0.10.0.md)). 0.9.11, on 2026-11-09: ⌘Q quits the game again, as a binding in Controls (#20)
   ([notes](releases/v0.9.11.md)). 0.9.10, on 2026-11-09: a 1920×1200 (16:10) output no longer crashes at start, and
   the Metal renderer is about 10% faster ([notes](releases/v0.9.10.md)). 0.9.9, on 2026-11-08: controller buttons can be assigned in the launcher again
   (#19) ([notes](releases/v0.9.9.md)). 0.9.8, on 2026-11-07: a walk key, the mouse's side buttons in menus and the
@@ -58,6 +59,7 @@ runs on macOS, Windows and Linux; game integration exists on macOS and on iOS.
 
 | Version | Highlights |
 |---|---|
+| 0.10.0 | The game's memory imported as the GPU reaches it, in merged 16 MiB regions, and freed GPU-address buffers released: Metal counts about 3.6 GB in the clinic instead of 8.4, at the same frame rate; 6.8 GB after a 49-minute session across areas (2.5 GB of it textures) |
 | 0.9.11 | ⌘Q quits the game again: a Controls binding, ⌘Q by default, only on a new press with ⌘ held, so #14 stays fixed (#20) |
 | 0.9.10 | A 1920×1200 (16:10) output starts again (exit code 139 since 0.9.8); the Metal renderer about 10% faster (classicrob: exact barrier read ranges, encoder ordering) |
 | 0.9.9 | Controller buttons can be assigned in the launcher again, and its controller list works (#19) |
@@ -84,7 +86,7 @@ ported by hand (the runtime's [Upstream](https://github.com/bloodborne-native/bl
 
 ## On main
 
-Main is 0.9.11. Work for developers since 0.9.5, not seen by players:
+Main is 0.10.0. Work for developers since 0.9.5, not seen by players:
 
 - **Test windows take the keyboard** (runtime `tools/mac_bench.sh`): test games are normal apps;
   `BB_BENCH_BACKGROUND=1` keeps one in the background. `BB_KEY_TRACE=1` logs key presses.
