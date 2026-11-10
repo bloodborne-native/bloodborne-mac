@@ -13,7 +13,7 @@ runs.
 | Tab | What it has |
 |---|---|
 | **Home** | The game folder and edition, a summary of the main settings |
-| **Graphics** | Aspect ratio and output resolution with a memory estimate, monitor, fullscreen, V-Sync, frame-rate mode and limit, the FPS counter, upscaling and sharpening, character motion vectors, model detail, visual effects |
+| **Graphics** | Aspect ratio and output resolution with a memory estimate, Low memory mode, monitor, fullscreen, V-Sync, frame-rate mode and limit, the FPS counter, upscaling and sharpening, character motion vectors, model detail, visual effects |
 | **Controls** | Which controller to use, and button mapping for controller and keyboard |
 | **Game** | Game language, skipping the intro videos, your save folder |
 | **Profiles** | Profiles, each with its saves, backups and trophies ([Profiles and saves](saves.md)) |
@@ -58,6 +58,11 @@ Advanced options apply at the next start.
   run it and the files are there.
 - **Character motion vectors:** off by default. They make moving characters much sharper with
   FSR for a few frames per second.
+- **Low memory mode** (Graphics, off by default): gives the GPU only the part of the game's
+  memory it uses, instead of all of it. In Iosefka's Clinic on an M3 Pro the GPU memory went from
+  about 8.4 GB to 3.6 GB, at the same frame rate; it grows as you visit more areas, to about
+  6.8 GB after a 50-minute session. Turn it on with 16 GB of memory or less: Home suggests it on
+  such devices. It applies at the next start.
 - **Output above 1080p:** use an upscaler preset; the memory estimate (Graphics, and the menu)
   shows what the game will use against your Mac's memory, in amber above three quarters of it.
   Without an upscaler above 1440p, characters are drawn black (a known issue).
