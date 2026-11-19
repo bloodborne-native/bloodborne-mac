@@ -60,8 +60,9 @@ Advanced options apply at the next start.
   FSR for a few frames per second.
 - **Low memory mode** (Graphics, off by default): gives the GPU only the part of the game's
   memory it uses, instead of all of it, and keeps at most 2 GB of it, letting go of what it used
-  least recently. In Iosefka's Clinic on an M3 Pro the GPU memory went from about 8.4 GB to under
-  2.8 GB, at the same frame rate. Turn it on with 16 GB of memory or less: Home suggests it on
+  least recently. It also keeps the textures of areas left behind within a fixed limit, so a
+  long session does not keep growing. In Iosefka's Clinic on an M3 Pro the GPU memory went from
+  about 8.4 GB to under 2.8 GB, at the same frame rate. Turn it on with 16 GB of memory or less: Home suggests it on
   such devices. It applies at the next start.
 - **Output above 1080p:** use an upscaler preset; the memory estimate (Graphics, and the menu)
   shows what the game will use against your Mac's memory, in amber above three quarters of it.
